@@ -35,8 +35,9 @@
 - **zustand ^5.0.5** - 軽量状態管理ライブラリ
 - **expo-status-bar** - Expoアプリ用ステータスバーコンポーネント
 
-### 設定に関する注意事項
+### 注意事項
 
+- ドキュメントやソースコード上のコメントは日本語で書く
 - Expoアプリは新しいアーキテクチャが有効（app.jsonで`newArchEnabled: true`）
 - iPadサポート（`supportsTablet: true`）
 - クロスプラットフォームサポート（iOS、Android、Web）が設定済み
