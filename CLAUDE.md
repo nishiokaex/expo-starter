@@ -24,7 +24,7 @@
 - Zustand (Class構文を使ったストア定義)
 - @react-native-async-storage/async-storage (データ永続化)
 - @react-navigation/native react-native-screens react-native-safe-area-context (ナビゲーション)
-- axios（HTTP通信を行う場合）
+- エラーサーバ(http://localhost:3000/log)とのHTTP通信はfetch関数。それ以外のHTTP通信はaxiosを使う。
 - クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
 - データは正規化して保存してください（第1正規化、第2正規化、第3正規化を満たす）
 - JavaScriptで記述（Typescriptは使わない）
