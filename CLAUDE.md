@@ -25,6 +25,7 @@
 - @react-native-async-storage/async-storage (データ永続化)
 - @react-navigation/native react-native-screens react-native-safe-area-context (ナビゲーション)
 - クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
+- データは正規化して保存してください（第1正規化、第2正規化、第3正規化を満たす）
 - JavaScriptで記述（Typescriptは使わない）
 
 ## 構成管理
