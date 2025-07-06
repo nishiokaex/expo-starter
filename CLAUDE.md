@@ -27,7 +27,9 @@
 - エラーサーバ(http://localhost:3000/log)とのHTTP通信はfetch関数。それ以外のHTTP通信はaxiosを使う。
 - クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
 - データは正規化して保存してください（第1正規化、第2正規化、第3正規化を満たす）
+- データにはバージョン情報を含め、バージョン番号に基づきマイグレーションできるようにしてください
 - JavaScriptで記述（Typescriptは使わない）
+- TDDで開発してください（RED, GREEN, REFACTORING）
 
 ## 構成管理
 
