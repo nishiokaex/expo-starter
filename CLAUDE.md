@@ -18,19 +18,13 @@
 
 - `npm run web` - Expo Web開発サーバーを起動
 
-## プロジェクトアーキテクチャ
+## 技術要件
 
-これは以下の構造を持つExpo React Nativeアプリケーションです：
-
-- **App.js** - 基本的なReact Nativeコンポーネントを含むメインアプリケーションエントリーポイント
-- **index.js** - Expoアプリ登録エントリーポイント
-- **app.json** - アプリメタデータ、アイコン、プラットフォーム設定を含むExpo設定
-- **assets/** - アプリアイコン、スプラッシュスクリーン、静的アセットを格納
-- **package.json** - Expo ~52.0.46、React 18.3.1、React Native 0.76.9などの依存関係
-
-### 主要な依存関係
-
-- **Expo SDK ~52.0.46** - コアExpo開発プラットフォーム
+- Expo SDK v52
+- Zustand (Class構文を使ったストア定義)
+- @react-native-async-storage/async-storage (データ永続化)
+- @react-navigation/native react-native-screens react-native-safe-area-context (ナビゲーション)
+- クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
 
 ## 構成管理
 
@@ -49,4 +43,3 @@
 
 - ドキュメントやコメントは日本語で記述
 - セキュリティ・パフォーマンス・保守性を重視した設計
-- コミットはClaudeシグネチャ抜きで行う
