@@ -24,6 +24,9 @@
 - Zustand (Class構文を使ったストア定義)
 - @react-native-async-storage/async-storage (データ永続化)
 - @react-navigation/native react-native-screens react-native-safe-area-context (ナビゲーション)
+- react-i18next（多言語対応）
+- react-hook-form（フォームを使う場合）
+- react-icons（絵文字を使う場合、このアイコンから選択）
 - エラーサーバ(http://localhost:3000/log)とのHTTP通信はfetch関数。それ以外のHTTP通信はaxiosを使う。
 - クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
 - データは正規化して保存してください（第1正規化、第2正規化、第3正規化を満たす）
