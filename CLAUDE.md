@@ -23,7 +23,8 @@
 - Expo SDK v52
 - Zustand (Class構文を使ったストア定義)
 - @react-native-async-storage/async-storage (データ永続化)
-- @react-navigation/native react-native-screens react-native-safe-area-context (ナビゲーション)
+- expo-router（ナビゲーション）
+- expo-notifications（通知）
 - react-i18next（多言語対応）
 - react-hook-form（フォームを使う場合）
 - react-icons（絵文字を使う場合、このアイコンから選択）
