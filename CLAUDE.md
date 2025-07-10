@@ -21,6 +21,7 @@
 ## 技術要件
 
 - Expo SDK v52
+- Nativewind v4（スタイリング）
 - Zustand (Class構文を使ったストア定義)
 - @react-native-async-storage/async-storage (データ永続化)
 - expo-router（ナビゲーション）

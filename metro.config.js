@@ -1,4 +1,5 @@
 const { getDefaultConfig } = require('expo/metro-config');
+const { withNativeWind } = require('nativewind/metro');
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
@@ -77,4 +78,4 @@ config.server = {
   }
 };
 
-module.exports = config;
+module.exports = withNativeWind(config, { input: './global.css' });
