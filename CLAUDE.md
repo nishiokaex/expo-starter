@@ -26,11 +26,13 @@
 - Zustand (Class構文を使ったストア定義)
 - @react-native-async-storage/async-storage (データ永続化)
 - expo-router（ナビゲーション）
+- react-native-bottom-tabs（Bottom Tab コンポーネント）
 - expo-notifications（通知）
 - react-i18next（多言語対応）
 - react-hook-form（フォームを使う場合）
 - react-icons（絵文字を使う場合、このアイコンから選択）
-- テストライブラリは「npx expo install jest-expo jest @testing-library/react-native --dev」でインストールするものだけを使う
+- jest-expo（Unitフレームワーク。npx expo install jest-expo jest --devでインストールすること）
+- @testing-library/react-native（React Nativeテストユーティリティ。npm install --save-devでインストールすること）
 - エラーサーバ(http://localhost:3000/log)とのHTTP通信はfetch関数。それ以外のHTTP通信はaxiosを使う。
 - クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
 - データは正規化して保存してください（第1正規化、第2正規化、第3正規化を満たす）
