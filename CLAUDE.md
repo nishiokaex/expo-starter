@@ -16,29 +16,40 @@
 
 ## 開発コマンド
 
-- `npm run web` - Expo Web開発サーバーを起動
+- `cd frontend && npm run web` - Expo Web開発サーバーを起動
 
 ## 技術要件
 
-- Expo SDK v52
-- react-native-paper, react-native-safe-area-context（UIコンポーネント）
-- react-native-paper-tabs, react-native-pager-view（Tabコンポーネント）
-- Zustand (Class構文を使ったストア定義)
-- @react-native-async-storage/async-storage (データ永続化)
-- expo-router（ナビゲーション）
-- react-native-bottom-tabs（Bottom Tab コンポーネント）
-- expo-notifications（通知）
-- react-i18next（多言語対応）
-- react-hook-form（フォームを使う場合）
-- react-icons（絵文字を使う場合、このアイコンから選択）
-- jest-expo（Unitフレームワーク。npx expo install jest-expo jest --devでインストールすること）
-- @testing-library/react-native（React Nativeテストユーティリティ。npm install --save-devでインストールすること）
-- エラーサーバ(http://localhost:3000/log)とのHTTP通信はfetch関数。それ以外のHTTP通信はaxiosを使う。
-- クリーンアーキテクチャ (Domain Layer、Infrastructure Layer、Presentation Layer)
-- データは正規化して保存してください（第1正規化、第2正規化、第3正規化を満たす）
-- データにはバージョン情報を含め、バージョン番号に基づきマイグレーションできるようにしてください
-- JavaScriptで記述（Typescriptは使わない）
-- TDDで開発してください（RED, GREEN, REFACTORING）
+### フロントエンド(frontend)
+- **React Native**: Expo SDK v52
+- **ナビゲーション**: expo-router
+- **状態管理**: Zustand (Class構文を使ったストア定義)
+- **UIライブラリ**: react-native-paper, react-native-safe-area-context
+- **Bottom Tab**: react-native-bottom-tabs
+- **データ永続化**: @react-native-async-storage/async-storage
+- **通知**: expo-notifications
+- **多言語対応**: react-i18next
+- **フォーム**: react-hook-form
+- **アイコン**: react-icons
+- **HTTP通信**: axios（一般用途）, fetch（エラーサーバ通信用）
+- **言語**: JavaScript（TypeScript不使用）
+
+### バックエンド(backend)
+- **BaaS**: Supabase
+- **データベース**: PostgreSQL（Supabase）
+- **認証**: Supabase Auth
+
+### アーキテクチャ
+- **設計パターン**: クリーンアーキテクチャ
+  - Domain Layer（ビジネスロジック）
+  - Infrastructure Layer（データアクセス）
+  - Presentation Layer（UI）
+- **データ正規化**: 第1〜第3正規化対応
+- **データバージョニング**: バージョン情報付きマイグレーション対応
+
+### テスト
+- **Unitテスト**: jest-expo
+- **React Nativeテスト**: @testing-library/react-native
 
 ## 構成管理
 
@@ -49,11 +60,16 @@
 
 1. feature/[エンハンス内容] という名前の機能ブランチを作成する
 2. 機能を開発する
-3. Web版でビルドして動作確認し、./logs以下のファイルに例外が出力されなくなるまで、修正する
+3. Web版でビルドして動作確認し、./frontend/logs以下のファイルに例外が出力されなくなるまで、修正する
 4. 変更内容をコミットする
 5. ghコマンドでPull Requestを作成する。マージで機能ブランチを削除する設定で作成する。
 
-### 開発ガイドライン
+## 開発ガイドライン
 
 - ドキュメントやコメントは日本語で記述
 - セキュリティ・パフォーマンス・保守性を重視した設計
+
+## 調査・分析タスク
+- 複雑な問題に対しては、**急がず時間をかけて調査してください**
+- 複数のファイルを読み込み、**全体像を把握してから**作業を開始してください
+- 不明な点は、関連するドキュメントやコードを**徹底的に調査**してください
