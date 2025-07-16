@@ -32,6 +32,7 @@
 - **フォーム**: react-hook-form
 - **アイコン**: react-icons
 - **HTTP通信**: axios（一般用途）, fetch（エラーサーバ通信用）
+- **Drag And Drop**: @mgcrea/react-native-dnd
 - **言語**: JavaScript（TypeScript不使用）
 
 ### バックエンド(backend)
@@ -66,6 +67,7 @@
 
 ## 開発ガイドライン
 
+- Google Style Guidesに準拠したソースコードを書く
 - ドキュメントやコメントは日本語で記述
 - セキュリティ・パフォーマンス・保守性を重視した設計
 
